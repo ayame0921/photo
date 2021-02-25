@@ -21,7 +21,6 @@
         </a>
 <div class="photo-info">
     <a href="" class="category">{{ photo.category }}</a>
-    <!-- TODO: ここのパスがおかしい？ -->
     <a href="{% url 'app:users_detail' photo.user.id %}">@{{ photo.user }}</a>
         </div>
     </div>

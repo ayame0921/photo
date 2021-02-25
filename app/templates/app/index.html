@@ -4,7 +4,7 @@
 {% if category %}
     <h2>カテゴリー:{{ category.title }} の検索結果</h2>
     {% endif %}
-<div class="photo-container"> 
+<div class="photo-container">
     {% for photo in photos %}
 <div class="photo">
 <a href="{% url 'app:photos_detail' photo.id %}">
